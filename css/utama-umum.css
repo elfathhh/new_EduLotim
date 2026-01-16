@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url("../img/ve.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar{
+    display: flex;
+    max-width: 1200px;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    margin-top: 5px;
+    /* efel bg blur */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-logo{
+    font-size: 24px;
+    padding-left: 12px;
+    font-weight: 700;
+    color: #70B2B2;
+}
+
+.nav-logo span{
+    color: aliceblue;
+}
+
+.menu{
+    display: flex;
+    flex: 1;
+    list-style: none;
+    margin-inline:auto;
+    gap: 12px;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+
+.nav-btn{
+    margin-right: 12px;
+    width: 65px;
+    height: 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #70B2B2;
+    color: #ffffff;
+}
+
+.nav-link {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    color: #ffffff;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 60%;
+    height: 6px;
+    background: #70B2B2; 
+    border-radius: 999px;
+    transform: translateX(-50%);
+}
+
+.hero{
+    margin: 20px auto;
+    padding: 4rem 3rem;
+    max-width: 1150px;
+    min-height: 80vh;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-cont{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.hero-cont h1{
+    color: #ffffff;
+    max-width: 500px;
+}
+
+.hero-cont p{
+    max-width: 400px;
+    color: #ffffff;
+
+}
+
+.hero-btn{
+    margin-top: 12px;
+    width: 75px;
+    height: 2.3rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #70B2B2;
+    color: #ffffff;
+}
+
+.kiri-hero{
+    flex: 1;
+}
+
+.kanan-hero{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+img{
+    max-width: 420px;
+    height: 420px;
+}
+
+/* about */
+.about{
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    background-color: aliceblue ;
+    /* margin-bottom: 12px; */
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.foto-wrapper{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-text{
+    flex: 1.2; 
+    color: #70B2B2;
+}
+
+.about-text h2{
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.about-text p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 550px;
+    text-align: start;
+    color: #000000;
+}
+
+.fitur{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fitur-items{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.fitur-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin-right: 2px;  
+    flex-shrink: 0;
+}
+
+.fitur-icon i{
+    font-size: 50px;
+}
+
+.text-fitur{
+    max-width: 350px;
+}
+
+/* footer */
+footer{
+    background-color:#7BAD4E ;
+    max-width: 1350px;
+    display: flex;
+    height: 200px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+
+.foot-logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: #70B2B2;
+}
+
+.foot-logo span{
+    color: aliceblue;
+}
+
+footer .logo-moto{
+    max-width: 300px;
+    padding: 40px;
+}
+
+footer p{
+    color: #ffffff;
+}
+
+.navigasi{
+    margin-top: 30px;
+    max-width: 250px;
+    list-style: none;
+}
+
+.navigasi h3{
+    color: #70B2B2;
+}
+
+.found-us h3{
+    color: #70B2B2;
+}
+.navigasi li{
+    list-style: none;
+    color: #ffffff;
+}
+
+.found-us{
+    margin-top: 30px;
+    margin-right: 50px;
+    max-width: 300px;
+}
+
+.found-us .foot-icon i{
+    color: #70B2B2;
+    font-size: 20px;
+}
+
+.foot-icon {
+    display: flex;
+    gap: 12px;
+}
+
